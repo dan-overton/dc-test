@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+
+  web:
+    image: galatatest.azurecr.io/dc-test:v1

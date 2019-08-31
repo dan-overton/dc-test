@@ -5,8 +5,9 @@ services:
   web:
     build:
       context: .
+      dockerfile: ./dummy/folder/Dockerfile
     ports:
       - "8000:8000"
     volumes:
       - ./src:/src
-    command: bash -c "python main.py"
+    command: bash -c "python main.py && echo Done"

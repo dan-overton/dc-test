@@ -3,4 +3,10 @@ version: '3'
 services:
 
   web:
-    image: galatatest.azurecr.io/dc-test:v1
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/src
+    command: bash -c "python main.py"

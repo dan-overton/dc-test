@@ -10,4 +10,4 @@ services:
       - "8000:8000"
     volumes:
       - ./src:/src
-    command: bash -c "python main.py && echo Done"
+    command: bash -c "sleep 1 && python main.py nowt && echo Done"
